@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --text-light: #ffffff;
+  --text-dark: #0a1f24;
+  --text-primary: #687179;
+  --text-secondary: #1ca8cb;
+  --bg-primary: #f7f7f7;
+  --bg-secondary: #1ca8cb;
+  --bg-light: #ffffff;
+  --button-light: #02a5ce1a;
+  --button-primary: #1ca8cb;
+  --button-secondary: #113d48;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.font-kalam {
+  font-family: "Kalam", cursive;
+}
+
+h6 {
+  font-family: "Kalam", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+li,
+button,
+input {
+  font-family: "Manrope", sans-serif;
+}
