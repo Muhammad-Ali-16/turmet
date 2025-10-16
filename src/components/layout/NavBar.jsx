@@ -16,9 +16,9 @@ function OverlayBar({ isOpen }) {
           </a>
         </li>
         <li className={`overlay-link group cursor-pointer`} onClick={() => { setIsSublistOpen(!isSublistOpen) }}>
-          Pages <i className={`ms-1 bi bi-chevron-down before:transition-all before:duration-150 ${isSublistOpen ? 'before:-rotate-180' : 'before:rotate-0'}`} />
+          Pages <i className={`ms-1 bi bi-chevron-down before:transition-all before:duration-150 ${isSublistOpen  ? 'before:-rotate-180' : 'before:rotate-0'}`} />
           {/* >------->-------->Overaly-Sub-Links<-------<--------< */}
-          <ul className={`sublist relative px-4 space-y-2 rounded-b-lg w-[140px] transition-all duration-150 ${isSublistOpen ? 'visible opacity-100 max-h-[350px] py-4' : 'invisible opacity-0 max-h-0 py-0'}`}>
+          <ul className={`sublist relative px-4 space-y-2 rounded-b-lg w-[140px] transition-all duration-150 ${isSublistOpen && isOpen ? 'visible opacity-100 max-h-[350px] py-4' : 'invisible opacity-0 max-h-0 py-0'}`}>
             <li className="sublist-link">About Us</li>
             <li className="sublist-link">Activities</li>
             <li className="sublist-link">Our Team</li>
