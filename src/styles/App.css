@@ -1,0 +1,27 @@
+.about-animation-up-down {
+    animation: up-down 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about-animation-left-right {
+    animation: left-right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(12px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

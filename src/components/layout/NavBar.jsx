@@ -89,7 +89,7 @@ export default function NavBar() {
         </ul>
 
         <div className="navbar-btn hidden xl:block">
-          <Button text='Request A Quote' path='/' />
+          <Button text='Request A Quote' path='/' additionalClass='bg-white/25 before:bg-[var(--button-secondary)]'/>
         </div>
 
         <button className="toogle-btn cursor-pointer inline-block xl:hidden text-3xl" onClick={() => { setIsOpen(!isOpen) }}>

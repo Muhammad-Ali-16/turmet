@@ -3,6 +3,7 @@ import React from 'react'
 function Hero() {
   return (
     <section className='hero-main relative z-1 xl:m-5'>
+      {/* >------->-------->Hero-Main<-------<--------< */}
       <div className="hero-content-main bg-[url(/hero.jpg)] bg-cover xl:pt-[88px] w-full xl:rounded-2xl px-2 md:px-20 ">
         <div className="max-w-7xl xl:h-[100vh] h-[70vh] mx-auto text-[var(--text-light)] space-y-2 lg:space-y-4 text-center md:text-start flex flex-col justify-center items-center md:items-start">
           <h6 className='text-sm lg:text-lg'>Get unforgettable pleasure with us</h6>
@@ -12,13 +13,15 @@ function Hero() {
 
       </div>
 
+      {/* >------->-------->Hero-Bottom<-------<--------< */}
       <div className="best-place-section-main mx-2 xl:mx-0">
         <div className="content-main border text-[var(--text-dark)] border-black/35 rounded-2xl my-4 px-6 py-10">
 
-          <h2 className="text-2xl lg:text-3xl font-bold my-8">Find The Best Place</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold my-8 text-center">Find The Best Place</h2>
 
+          {/* >------->-------->Hero-Form<-------<--------< */}
           <form>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 max-w-7xl mx-auto">
 
               <div className="space-y-3">
                 <label htmlFor="looking-for" className="block text-md font-semibold text-[var(--text-dark)]">
