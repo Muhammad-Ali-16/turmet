@@ -24,8 +24,9 @@ function Destination() {
 
     return (
         <section className='destination-main px-3 py-12 relative overflow-hidden'>
-            <div className="destination-content-main max-w-7xl mx-auto relative">
-                <div className="destination-heading-main flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+            <div className="destination-content-main max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto relative">
+                {/* >------->-------->Destination-Main-Heading<-------<--------< */}
+                <div className="destination-heading-main flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-4 lg:space-y-0">
                     <div className="destination-heading">
                         <h6 className='text-md lg:text-xl text-[var(--text-secondary)]'>Our Destination</h6>
                         <h1 className='text-2xl md:text-4xl font-bold max-w-xl'>Our Top Location For You Property</h1>
@@ -33,8 +34,8 @@ function Destination() {
                     <Button path='/destination' text='Learn More' additionalClass='bg-[var(--button-primary)] before:bg-[var(--button-secondary)] text-[var(--text-light)]' />
                 </div>
 
-                <div className="destination-swiper-slider relative overflow-hidden md:pr-[60px] my-10">
-
+                {/* >------->-------->Destination-Swiper-Slider<-------<--------< */}
+                <div className="destination-swiper-slider relative overflow-hidden xl:pr-[60px] my-10">
                     <div className="absolute right-0 top-0 bottom-0 w-[10px] md:bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
                     <Swiper

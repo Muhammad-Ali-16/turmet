@@ -1,6 +1,7 @@
 import About from "../../homeSections/About"
 import Destination from "../../homeSections/Destination"
 import Hero from "../../homeSections/Hero"
+import Services from "../../homeSections/Services"
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
             <Hero />
             <About />
             <Destination/>
+            <Services/>
         </>
     )
 }

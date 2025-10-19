@@ -11,7 +11,7 @@ function About() {
     return (
         <>
             <section className='about-main relative w-full px-3 xl:py-20 lg:py-18 md:py-15 py-12'>
-                <div className="about-content-main relative max-w-7xl mx-auto text-[var(--text-dark)] grid grid-rows-1 md:grid-cols-2 grid-cols-1">
+                <div className="about-content-main relative max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto text-[var(--text-dark)] grid grid-rows-1 md:grid-cols-2 grid-cols-1">
 
                     <div className="about-col-1 relative mx-4 my-10 md:my-0 xl:bg-[url(/plane-shape-2.png)] bg-top-right bg-no-repeat  ">
                         <div className="relative rounded-2xl">
