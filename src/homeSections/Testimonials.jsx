@@ -21,7 +21,7 @@ function Testimonials() {
                 {/* >------->-------->Testimonials-Col-2<-------<--------< */}
                 <div className="testimonials-col-2 my-10 lg:my-0">
                     {/* >------->-------->Testimonials-Main-Heading<-------<--------< */}
-                    <div className="testimonials-heading-main flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-4 lg:space-y-0">
+                    <div className="testimonials-heading-main flex flex-col ">
                         <div className="testimonials-heading">
                             <h6 className='text-md lg:text-xl text-[var(--text-secondary)]'>Testimonials</h6>
                             <h1 className='text-2xl md:text-4xl font-bold max-w-xl'>What They Say About Us</h1>
