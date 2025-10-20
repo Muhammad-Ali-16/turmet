@@ -1,4 +1,4 @@
-import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -6,9 +6,9 @@ function Footer() {
       <div className='footer-content-main grid grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-7xl mx-auto text-white gap-8 border-b border-dashed border-white/40 pb-2'>
         {/* >------->-------->Footer-Col-1<-------<--------< */}
         <div className="footer-col text-center text-white space-y-6 bg-[#242625] px-8 py-12 rounded-b-2xl">
-          <a href="/">
+          <Link to="/">
             <img src="/logo.svg" alt="logo" className='my-6 mx-auto max-w-[180px]' />
-          </a>
+          </Link>
           <div>
             <h5 className='font-bold text-lg'>Subscribe Newsletter</h5>
             <h5 className='text-white/80 text-md'>Get Our Latest Deals and Update</h5>
@@ -29,17 +29,17 @@ function Footer() {
               className='bg-[var(--button-primary)] before:bg-[var(--button-secondary)] text-[var(--text-light)] cursor-pointer px-5 py-4 rounded-full w-full relative z-2 overflow-hidden 
             before:transition-all before:duration-350 before:content-[] before:absolute before:inset-0 before:w-[100%] before:h-[100%] before:rounded-full before:-z-1 before:scale-x-0 hover:before:scale-x-100 before:origin-left'
             >
-              <a href='/' className='font-semibold text-sm lg:text-[16px]'>
+              <Link to='/' className='font-semibold text-sm lg:text-[16px]'>
                 Subscribe
                 <i className="ms-1 bi bi-arrow-right"></i>
-              </a>
+              </Link>
             </button>
           </form>
           <div className="footer-social-icons space-x-2">
-            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <a href="?" className=''><i className="bi bi-facebook"></i></a></button>
-            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <a href="?" className=''><i className="bi bi-instagram"></i></a></button>
-            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <a href="?" className=''><i className="bi bi-twitter-x"></i></a></button>
-            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <a href="?" className=''><i className="bi bi-linkedin"></i></a></button>
+            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <Link to="?" className=''><i className="bi bi-facebook"></i></Link></button>
+            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <Link to="?" className=''><i className="bi bi-instagram"></i></Link></button>
+            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <Link to="?" className=''><i className="bi bi-twitter-x"></i></Link></button>
+            <button className='w-12 h-12 rounded-full bg-white hover:bg-[var(--bg-secondary)] hover:text-white text-[var(--text-secondary)] transition-all duration-300'> <Link to="?" className=''><i className="bi bi-linkedin"></i></Link></button>
           </div>
         </div>
         {/* >------->-------->Footer-Col-2<-------<--------< */}
@@ -48,11 +48,11 @@ function Footer() {
             Quick Links
           </h5>
           <ul className='space-y-3.5'>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Home</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">About Us</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Blog</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Services</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Tour</a></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/">Home</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/about">About Us</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/blog">Blog</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/services">Services</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour">Tour</Link></li>
           </ul>
         </div>
         {/* >------->-------->Footer-Col-3<-------<--------< */}
@@ -61,11 +61,11 @@ function Footer() {
             Services
           </h5>
           <ul className='space-y-3.5'>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Wanderlust Adventure</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Globe Trotters Travel</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Odyssey Travel Services</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Jet Set Journeys</a></li>
-            <li className='hover:text-[var(--text-secondary)]'><a href="/">Dream Destinations Travel</a></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Wanderlust Adventure</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Globe Trotters Travel</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Odyssey Travel Services</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Jet Set Journeys</Link></li>
+            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Dream Destinations Travel</Link></li>
           </ul>
         </div>
         {/* >------->-------->Footer-Col-4<-------<--------< */}

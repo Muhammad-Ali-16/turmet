@@ -15,10 +15,10 @@ function AppBooking() {
                             <h1 className='text-2xl md:text-5xl font-bold max-w-2xl text-[var(--text-light)]'>50% Offer For Online 1stApp Booking</h1>
                         </div>
                         <p className='max-w-2xl text-xs lg:text-sm text-[var(--text-light)]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eum error minima ducimus vitae exercitationem sed adipisci saepe quas.</p>
-                        <div className="store-icons flex flex-row space-x-4 my-6">
-                            <img src={AppStoreImg} alt="AppStoreImg" />
-                            <img src={PlayStoreImg} alt="PlayStoreImg" />
-                        </div>
+                        <div className="store-icons flex flex-col max-md:items-center md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-6 ">
+                            <img src={AppStoreImg} alt="AppStoreImg" className='max-w-[150px]' />
+                            <img src={PlayStoreImg} alt="PlayStoreImg"  className='max-w-[150px]' />
+                        </div> 
                     </div>
                 </div>
                 {/* >------->-------->App-Booking-Col-2<-------<--------< */}

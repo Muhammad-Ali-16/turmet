@@ -1,4 +1,5 @@
-import React, { use, useState } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../ui/Button'
 
 
@@ -11,31 +12,31 @@ function OverlayBar({ isOpen }) {
       {/* >------->-------->Overaly-Links<-------<--------< */}
       <ul className={`overlay-links flex flex-col space-y-2 ${isOpen ? 'visible' : 'invisible'} p-4`}>
         <li className='overlay-link'>
-          <a href='/'>
+          <Link to='/'>
             Home
-          </a>
+          </Link>
         </li>
         <li className={`overlay-link group cursor-pointer`} onClick={() => { setIsSublistOpen(!isSublistOpen) }}>
-          Pages <i className={`ms-1 bi bi-chevron-down before:transition-all before:duration-150 ${isSublistOpen  ? 'before:-rotate-180' : 'before:rotate-0'}`} />
+          Pages <i className={`ms-1 bi bi-chevron-down before:transition-all before:duration-150 ${isSublistOpen ? 'before:-rotate-180' : 'before:rotate-0'}`} />
           {/* >------->-------->Overaly-Sub-Links<-------<--------< */}
           <ul className={`sublist relative px-4 space-y-2 rounded-b-lg w-[140px] transition-all duration-150 ${isSublistOpen && isOpen ? 'visible opacity-100 max-h-[350px] py-4' : 'invisible opacity-0 max-h-0 py-0'}`}>
-            <li className="sublist-link">About Us</li>
-            <li className="sublist-link">Activities</li>
-            <li className="sublist-link">Our Team</li>
-            <li className="sublist-link">Our Blog</li>
-            <li className="sublist-link">Faq</li>
-            <li className="sublist-link">Contact Us</li>
+            <li className="sublist-link"><Link to='/about'> About Us </Link> </li>
+            <li className="sublist-link"><Link to='/activities'> Activities </Link> </li>
+            <li className="sublist-link"><Link to='/team'> Our Team </Link> </li>
+            <li className="sublist-link"><Link to='/blog'> Our Blog </Link> </li>
+            <li className="sublist-link"><Link to='/faq'> Faq </Link> </li>
+            <li className="sublist-link"><Link to='/contact'> Contact Us </Link> </li>
           </ul>
         </li>
         <li className='overlay-link'>
-          <a href='/'>
+          <Link to='/destination'>
             Destination
-          </a>
+          </Link>
         </li>
         <li className='overlay-link'>
-          <a href='/'>
+          <Link to='/tour'>
             Tour
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
@@ -53,43 +54,43 @@ export default function NavBar() {
       {/* >------->-------->NavBar-Main<-------<--------< */}
       <div className="navbar-content max-w-7xl relative mx-auto text-white flex flex-row justify-between items-center">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src="/logo.svg" alt="logo" className='max-md:w-[150px]' />
-          </a>
+          </Link>
         </div>
         {/* >------->-------->Nav-Links<-------<--------< */}
         <ul className="nav-links  hidden xl:flex flex-row space-x-10">
           <li className={nav_link}>
-            <a href='/'>
+            <Link to='/'>
               Home
-            </a>
+            </Link>
           </li>
           <li className={`${nav_link} group cursor-pointer`}>
             Pages <i className="ms-1 bi bi-chevron-down" />
             {/* >------->-------->NavBar-Sub-Links<-------<--------< */}
             <ul className="sublist top-8 absolute bg-white p-4 space-y-2 rounded-b-lg text-black w-[140px] max-h-0 transition-all duration-200  invisible opacity-0 group-hover:opacity-100 group-hover:visible group-hover:max-h-[300px] ">
-              <li className="sublist-link hover:text-[var(--text-secondary)]">About Us</li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]">Activities</li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]">Our Team</li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]">Our Blog</li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]">Faq</li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]">Contact Us</li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/about'> About Us </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/activites'> Activities </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/team'> Our Team </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/blog'> Our Blog </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/faq'> Faq </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/contact'> Contact Us </Link> </li>
             </ul>
           </li>
           <li className={nav_link}>
-            <a href='/'>
+            <Link to='/'>
               Destination
-            </a>
+            </Link>
           </li>
           <li className={nav_link}>
-            <a href='/'>
+            <Link to='/'>
               Tour
-            </a>
+            </Link>
           </li>
         </ul>
 
         <div className="navbar-btn hidden xl:block">
-          <Button text='Request A Quote' path='/' additionalClass='bg-white/25 before:bg-[var(--button-secondary)]'/>
+          <Button text='Request A Quote' path='/' additionalClass='bg-white/25 before:bg-[var(--button-secondary)]' />
         </div>
 
         <button className="toogle-btn cursor-pointer inline-block xl:hidden text-3xl" onClick={() => { setIsOpen(!isOpen) }}>
