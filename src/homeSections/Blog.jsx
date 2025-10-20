@@ -37,8 +37,8 @@ function Blog() {
                                 />
                             </div>
                             <div className="blog-card-review flex flex-row items-center justify-between">
-                                <h5 className='text-sm text-black/70'><i class="me-0.5 text-[var(--text-secondary)] bi bi-chat"></i>{card.noComments} Comments</h5>
-                                <h5 className='text-sm text-black/70'><i class="me-0.5 text-[var(--text-secondary)] bi bi-calendar"></i> {card.Date}</h5>
+                                <h5 className='text-sm text-black/70'><i className="me-0.5 text-[var(--text-secondary)] bi bi-chat"></i>{card.noComments} Comments</h5>
+                                <h5 className='text-sm text-black/70'><i className="me-0.5 text-[var(--text-secondary)] bi bi-calendar"></i> {card.Date}</h5>
                             </div>
                             <div className="card-description line-clamp-2">
                                 <div className="card-heading">

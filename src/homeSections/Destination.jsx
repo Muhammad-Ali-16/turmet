@@ -16,11 +16,7 @@ function Destination() {
         { imgUrl: Amazon, heading: 'The Amazon', discription: 'Destination 2', path: '/destination' },
         { imgUrl: China, heading: 'The Great Wall Of China', discription: 'Destination 3', path: '/destination' },
         { imgUrl: Venezuela, heading: 'Angel Falls, Venezuela', discription: 'Destination 4', path: '/destination' },
-        { imgUrl: NewZealand, heading: 'New Zealand', discription: 'Destination 1', path: '/destination' },
-        { imgUrl: Amazon, heading: 'The Amazon', discription: 'Destination 2', path: '/destination' },
-        { imgUrl: China, heading: 'The Great Wall Of China', discription: 'Destination 3', path: '/destination' },
-        { imgUrl: Venezuela, heading: 'Angel Falls, Venezuela', discription: 'Destination 4', path: '/destination' },
-    ]
+      ]
 
     return (
         <section className='destination-main px-3 py-12 relative overflow-hidden'>
@@ -56,7 +52,7 @@ function Destination() {
                         className="destination-swiper"
                         style={{ overflow: 'visible' }}
                     >
-                        {SwiperSliderCards.map((card, i) => (
+                        {[ ...SwiperSliderCards, ...SwiperSliderCards].map((card, i) => (
                             <SwiperSlide key={i}>
                                 <div className="card relative rounded-2xl text-[var(--text-light)] w-auto overflow-hidden">
                                     <div className="card-img-main relative">

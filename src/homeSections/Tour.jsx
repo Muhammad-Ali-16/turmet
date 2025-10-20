@@ -16,11 +16,7 @@ function Tour() {
         { imgUrl: TourImg2, location: 'Thailand', heading: 'Bathing And Kayaking At Nonrival Beach', pricing: '35.00' },
         { imgUrl: TourImg3, location: 'Austria', heading: '5 Best Tips For An Amazing Monial Trip', pricing: '50.99' },
         { imgUrl: TourImg4, location: 'Slingerland', heading: 'Discover Most Beautiful Molvia: Nature Paradise', pricing: '70.00' },
-        { imgUrl: TourImg1, location: 'Nederland', heading: 'Best Time Ever To Explore Molinas Nature', pricing: '49.00' },
-        { imgUrl: TourImg2, location: 'Thailand', heading: 'Bathing And Kayaking At Nonrival Beach', pricing: '35.00' },
-        { imgUrl: TourImg3, location: 'Austria', heading: '5 Best Tips For An Amazing Monial Trip', pricing: '50.99' },
-        { imgUrl: TourImg4, location: 'Slingerland', heading: 'Discover Most Beautiful Molvia: Nature Paradise', pricing: '70.00' },
-    ]
+       ]
 
 
     return (
@@ -57,7 +53,7 @@ function Tour() {
                         }}
                         modules={[Autoplay]}
                     >
-                        {SwiperSliderCards.map((card, i) => (
+                        {[ ...SwiperSliderCards, ...SwiperSliderCards].map((card, i) => (
                             <SwiperSlide key={i}>
                                 <div className="card relative rounded-2xl text-[var(--text-dark)] w-auto overflow-hidden">
                                     {/* >------->-------->Tour-Card-Img<-------<--------< */}
