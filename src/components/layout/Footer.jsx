@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -48,11 +48,11 @@ function Footer() {
             Quick Links
           </h5>
           <ul className='space-y-3.5'>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/">Home</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/about">About Us</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/blog">Blog</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/services">Services</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour">Tour</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/">Home</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/about">About Us</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/blog">Blog</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/services">Services</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour">Tour</Link></li>
           </ul>
         </div>
         {/* >------->-------->Footer-Col-3<-------<--------< */}
@@ -61,11 +61,11 @@ function Footer() {
             Services
           </h5>
           <ul className='space-y-3.5'>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Wanderlust Adventure</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Globe Trotters Travel</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Odyssey Travel Services</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Jet Set Journeys</Link></li>
-            <li className='hover:text-[var(--text-secondary)]'><Link to="/tour_details">Dream Destinations Travel</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour_details">Wanderlust Adventure</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour_details">Globe Trotters Travel</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour_details">Odyssey Travel Services</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour_details">Jet Set Journeys</Link></li>
+            <li><Link className='hover:text-[var(--text-secondary)]' to="/tour_details">Dream Destinations Travel</Link></li>
           </ul>
         </div>
         {/* >------->-------->Footer-Col-4<-------<--------< */}

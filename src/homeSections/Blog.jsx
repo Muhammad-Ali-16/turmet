@@ -26,7 +26,7 @@ function Blog() {
                 </div>
 
                 <div className="blog-cards-main grid grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-    {/* >------->-------->Blog-Cards<-------<--------< */}
+                    {/* >------->-------->Blog-Cards<-------<--------< */}
                     {BlogCards.map((card, i) => (
                         <div className="card relative rounded-xl w-auto overflow-hidden p-3 shadow-xl space-y-5" key={i}>
                             <div className="card-img-main relative">

@@ -1,4 +1,4 @@
-.about-animation-up-down {
+.animation-up-down {
     animation: up-down 1.5s ease-in-out infinite alternate;
 }
 
@@ -12,8 +12,14 @@
     }
 }
 
-.about-animation-left-right {
+.animation-left-right {
     animation: left-right 1.5s ease-in-out infinite alternate;
+}
+
+
+.animation-left-right-pseudo::after{
+      animation: left-right 1.5s ease-in-out infinite alternate;
+
 }
 
 @keyframes left-right {
@@ -25,5 +31,6 @@
         transform: translateX(0px);
     }
 }
+
 
 

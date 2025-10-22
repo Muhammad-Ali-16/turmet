@@ -1,16 +1,14 @@
-import Button from '../components/ui/Button'
-import Counter from '../components/ui/Counter'
-import CheckIcon from '../assets/check.png'
-import AboutImg1 from '../assets/about-1.jpg'
-import AboutImg2 from '../assets/about-2.jpg'
-import AboutImg3 from '../assets/about-3.png'
-import AboutImgGroup from '../assets/group-about.png'
+import Button from '../ui/Button'
+import CheckIcon from '../../assets/check.png'
+import AboutImg1 from '../../assets/about-1.jpg'
+import AboutImg2 from '../../assets/about-2.jpg'
+import AboutImg3 from '../../assets/about-3.png'
+import AboutImgGroup from '../../assets/group-about.png'
 
 
 function About() {
-    return (
-        <>
-            <section className='about-main relative w-full px-3 xl:py-20 lg:py-18 md:py-15 py-12'>
+  return (
+       <section className='about-main relative w-full px-3 xl:py-20 lg:py-18 md:py-15 py-12'>
                 <div className="about-content-main relative max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto text-[var(--text-dark)] grid grid-rows-1 md:grid-cols-2 grid-cols-1">
 
                     <div className="about-col-1 relative mx-4 my-10 md:my-0 xl:bg-[url(/plane-shape-2.png)] bg-top-right bg-no-repeat  ">
@@ -20,10 +18,10 @@ function About() {
                         <div className="absolute xl:right-26 xl:-bottom-14 bottom-0 rounded-2xl border-8 border-white">
                             <img src={AboutImg2} alt="about-img" className='max-xl:max-w-[150px] max-w-[250px] rounded-lg' />
                         </div>
-                        <div className="about-animation-up-down  absolute xl:bottom-30 max-xl:top-0 xl:-left-4 rounded-2xl border-8 border-white">
+                        <div className="animation-up-down  absolute xl:bottom-30 max-xl:top-0 xl:-left-4 rounded-2xl border-8 border-white">
                             <img src={AboutImg3} alt="about-img" className='rounded-lg' />
                         </div>
-                        <div className="about-animation-left-right absolute right-5 bottom-5 xl:-bottom-12 xl:left-0">
+                        <div className="animation-left-right absolute right-5 bottom-5 xl:-bottom-12 xl:left-0">
                             <img src={AboutImgGroup} alt="about-img" className='max-xl:max-w-[120px] rounded-2xl'/>
                         </div>
                     </div>
@@ -63,9 +61,7 @@ function About() {
 
                 </div>
             </section>
-            <Counter />
-        </>
-    )
+       )
 }
 
 export default About

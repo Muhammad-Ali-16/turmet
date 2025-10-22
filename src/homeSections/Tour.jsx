@@ -34,7 +34,8 @@ function Tour() {
 
                 {/* >------->-------->Tour-Cards<-------<--------< */}
                 <div className="destination-swiper-slider relative  
-                before:content-[] before:bg-[url(/plane-shape.png)] before:absolute before:top-10 before:-left-20 before:bottom-0 before:right-0 before:h-auto before:w-auto before:bg-no-repeat "
+                before:content-[] before:bg-[url(/plane-shape.png)] before:absolute before:top-10 before:-left-20 before:bottom-0 before:right-0 before:h-auto before:w-auto before:bg-no-repeat
+                after:content-[] after:bg-[url(/plane-shape.png)] after:absolute after:top-0 after:-left-0 after:bottom-20 after:right-0 after:bg-no-repeat after:bg-bottom-right"
                 >
 
                     <Swiper
