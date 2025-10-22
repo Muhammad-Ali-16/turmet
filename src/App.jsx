@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./components/layout/Home";
 import PagesLayout from "./components/layout/PagesLayout";
 import PageAbout from "./page/PageAbout";
+import PageDestination from "./page/PageDestination";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/about" element={<><PagesLayout title='About Us'/> <PageAbout /></>} />
         </Route>
+        <Route element={<Layout />}>
+          <Route path="/destination" element={<><PagesLayout title='Destination'/> <PageDestination /></>} />
+        </Route>
+      
       </Routes>
     </BrowserRouter>
   )

@@ -78,12 +78,12 @@ export default function NavBar() {
             </ul>
           </li>
           <li className={nav_link}>
-            <Link to='/'>
+            <Link to='/destination'>
               Destination
             </Link>
           </li>
           <li className={nav_link}>
-            <Link to='/'>
+            <Link to='/tour'>
               Tour
             </Link>
           </li>
