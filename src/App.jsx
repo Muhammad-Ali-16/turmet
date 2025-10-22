@@ -5,6 +5,8 @@ import Home from "./components/layout/Home";
 import PagesLayout from "./components/layout/PagesLayout";
 import PageAbout from "./page/PageAbout";
 import PageDestination from "./page/PageDestination";
+import PageTour from "./page/PageTour";
+import Activities from "./page/Activities";
 
 function App() {
   return (
@@ -17,7 +19,13 @@ function App() {
           <Route path="/about" element={<><PagesLayout title='About Us'/> <PageAbout /></>} />
         </Route>
         <Route element={<Layout />}>
+          <Route path="/activities" element={<><PagesLayout title='Activities'/> <Activities /></>} />
+        </Route>
+        <Route element={<Layout />}>
           <Route path="/destination" element={<><PagesLayout title='Destination'/> <PageDestination /></>} />
+        </Route>
+       <Route element={<Layout />}>
+          <Route path="/tour" element={<><PagesLayout title='Tour'/> <PageTour /></>} />
         </Route>
       
       </Routes>
