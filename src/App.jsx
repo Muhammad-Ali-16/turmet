@@ -7,6 +7,9 @@ import PageAbout from "./page/PageAbout";
 import PageDestination from "./page/PageDestination";
 import PageTour from "./page/PageTour";
 import Activities from "./page/Activities";
+import PageTeam from "./page/PageTeam";
+import PageBlog from "./page/PageBlog";
+import FAQ from "./page/FAQ";
 
 function App() {
   return (
@@ -20,6 +23,15 @@ function App() {
         </Route>
         <Route element={<Layout />}>
           <Route path="/activities" element={<><PagesLayout title='Activities'/> <Activities /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/team" element={<><PagesLayout title='Our Team'/> <PageTeam /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/blog" element={<><PagesLayout title='Our Blog'/> <PageBlog /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/faq" element={<><PagesLayout title='FAQ'/> <FAQ /></>} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/destination" element={<><PagesLayout title='Destination'/> <PageDestination /></>} />
