@@ -12,6 +12,7 @@ import PageBlog from "./page/PageBlog";
 import FAQ from "./page/FAQ";
 import Contact from "./page/Contact";
 import ActivitiesDetails from "./page/ActivitiesDetails";
+import TourDetails from "./page/TourDetails";
 
 function App() {
   return (
@@ -21,33 +22,37 @@ function App() {
           <Route path="/" element={<Home />} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/about" element={<><PagesLayout title='About Us'/> <PageAbout /></>} />
+          <Route path="/about" element={<><PagesLayout title='About Us' /> <PageAbout /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/activities" element={<><PagesLayout title='Activities'/> <Activities /></>} />
+          <Route path="/activities" element={<><PagesLayout title='Activities' /> <Activities /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/activities/activities-details" element={<><PagesLayout title='Activities Details'/> <ActivitiesDetails /></>} />
+          <Route path="/activities/activities-details" element={<><PagesLayout title='Activities Details' /> <ActivitiesDetails /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/team" element={<><PagesLayout title='Our Team'/> <PageTeam /></>} />
+          <Route path="/team" element={<><PagesLayout title='Our Team' /> <PageTeam /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/blog" element={<><PagesLayout title='Our Blog'/> <PageBlog /></>} />
+          <Route path="/blog" element={<><PagesLayout title='Our Blog' /> <PageBlog /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/faq" element={<><PagesLayout title='FAQ'/> <FAQ /></>} />
+          <Route path="/faq" element={<><PagesLayout title='FAQ' /> <FAQ /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/contact" element={<><PagesLayout title='Contact Us'/> <Contact /></>} />
+          <Route path="/contact" element={<><PagesLayout title='Contact Us' /> <Contact /></>} />
         </Route>
         <Route element={<Layout />}>
-          <Route path="/destination" element={<><PagesLayout title='Destination'/> <PageDestination /></>} />
+          <Route path="/destination" element={<><PagesLayout title='Destination' /> <PageDestination /></>} />
         </Route>
-       <Route element={<Layout />}>
-          <Route path="/tour" element={<><PagesLayout title='Tour'/> <PageTour /></>} />
+        <Route element={<Layout />}>
+          <Route path="/tour" element={<><PagesLayout title='Tour' /> <PageTour /></>} />
         </Route>
-      
+        <Route element={<Layout />}>
+          <Route path="/tour-details" element={<><PagesLayout title='Tour Details' /> <TourDetails /></>} />
+        </Route>
+
+
       </Routes>
     </BrowserRouter>
   )
