@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import CardImg1 from '../assets/activities-1.jpg'
 import CardImg2 from '../assets/activities-2.jpg'
 import CardImg3 from '../assets/activities-3.jpg'
@@ -28,15 +30,27 @@ function Activities() {
       <div className='activities-content-main relative max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 '>
         <div className="cards-main grid grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-3">
           {ActivitiesCards.map((card, i) => (
-            <div className="card space-y-3 group" key={i}>
+            <div
+              className="card space-y-3 group"
+              key={i}
+            >
               <div className="card-img relative overflow-hidden rounded-2xl w-fit max-md:place-self-center">
-                <img src={card.imgUrl} alt={`${card.place} Img`} className='rounded-2xl relative transition-all duration-300 group-hover:scale-[1.2] cursor-pointer' />
-                <div className="img-overlay absolute bg-[var(--bg-secondary)] top-4 left-4 w-auto h-auto rounded-full text-white text-xs px-3 py-1 font-semibold">({card.Trip} Trips)</div>
+                <img
+                  src={card.imgUrl}
+                  alt={`${card.place} Img`}
+                  className='rounded-2xl relative transition-all duration-300 group-hover:scale-[1.2] cursor-pointer'
+                />
+                <div className="img-overlay absolute bg-[var(--bg-secondary)] top-4 left-4 w-auto h-auto rounded-full text-white text-xs px-3 py-1 font-semibold">
+                  ({card.Trip} Trips)
+                </div>
               </div>
               <h3 className="card-heading text-2xl font-bold mx-3">
-                <a href="/activities_details" className='transition-colors duration-150 hover:text-[var(--text-secondary)]'>
+                <Link
+                  to="/activities/activities-details"
+                  className='transition-colors duration-150 hover:text-[var(--text-secondary)]'
+                >
                   {card.location}
-                </a>
+                </Link>
               </h3>
             </div>
           ))}

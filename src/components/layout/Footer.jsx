@@ -77,10 +77,10 @@ function Footer() {
             <i className="bg-[var(--text-secondary)] p-2 me-4 rounded-sm bi bi-geo-alt-fill"></i> <h5>9550 Bolsa Ave #126, <br /> United States</h5>
           </div>
           <div className='flex flex-row items-center'>
-            <i class="bg-[var(--text-secondary)] p-2 me-4 rounded-sm bi bi-envelope-fill"></i> <h5>info@touron.com</h5>
+            <i className="bg-[var(--text-secondary)] p-2 me-4 rounded-sm bi bi-envelope-fill"></i> <h5>info@touron.com</h5>
           </div>
           <div className='flex flex-row items-center'>
-            <i class="bg-[var(--text-secondary)] p-2 me-4 rounded-sm bi bi-telephone-fill"></i> <h5>+256 214 203 215 <br /> +1 098 765 4321</h5>
+            <i className="bg-[var(--text-secondary)] p-2 me-4 rounded-sm bi bi-telephone-fill"></i> <h5>+256 214 203 215 <br /> +1 098 765 4321</h5>
           </div>
         </div>
       </div>

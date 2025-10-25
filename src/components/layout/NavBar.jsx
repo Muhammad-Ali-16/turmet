@@ -70,7 +70,7 @@ export default function NavBar() {
             {/* >------->-------->NavBar-Sub-Links<-------<--------< */}
             <ul className="sublist top-8 absolute bg-white p-4 space-y-2 rounded-b-lg text-black w-[140px] max-h-0 transition-all duration-200  invisible opacity-0 group-hover:opacity-100 group-hover:visible group-hover:max-h-[300px] ">
               <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/about'> About Us </Link> </li>
-              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/activites'> Activities </Link> </li>
+              <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/activities'> Activities </Link> </li>
               <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/team'> Our Team </Link> </li>
               <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/blog'> Our Blog </Link> </li>
               <li className="sublist-link hover:text-[var(--text-secondary)]"><Link to='/faq'> Faq </Link> </li>

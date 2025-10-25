@@ -1,32 +1,8 @@
-import { useState } from 'react'
 import CheckIcon from '../assets/check.png'
+import Accordion from '../components/ui/Accordion'
 
 function FAQ() {
-    const [index, setIndex] = useState(null)
-
-    const Accordion = [
-        {
-            heading: 'How Do I Book A Tour With Your Agency?',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore iure, inventore rem quo culpa corrupti ad illum alias magni.'
-        },
-        {
-            heading: 'What Payment Methods Do You Accept?',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore iure, inventore rem quo culpa corrupti ad illum alias magni.'
-        },
-        {
-            heading: 'Can I Customize My Travel Itinerary?',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore iure, inventore rem quo culpa corrupti ad illum alias magni.'
-        },
-        {
-            heading: 'What Is Your Cancellation Policy?',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore iure, inventore rem quo culpa corrupti ad illum alias magni.'
-        }
-    ]
-
-    const toggleAccordion = (i) => {
-        setIndex(index === i ? null : i)
-    }
-
+   
     return (
         <section className='faq-main bg-[var(--bg-light)] overflow-hidden'>
             <div className="faq-content-main max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto grid grid-rows-1 grid-cols-1 lg:grid-cols-2 px-3 py-16 md:py-18 lg:py-22 gap-10">
@@ -58,26 +34,7 @@ function FAQ() {
                 </div>
                 {/* >------->-------->FAQ-Accordion<-------<--------< */}
                 <div className="faq-col-2 place-self-center">
-                    <div className="accordion-main divide-y divide-black/10 space-y-3">
-                        {Accordion.map((item, i) => (
-                            <div key={i} className="accordion-item">
-                                <button
-                                    className="text-lg w-full text-left font-medium py-4 flex justify-between items-center cursor-pointer"
-                                    onClick={() => toggleAccordion(i)}
-                                >
-                                    {item.heading}
-                                    <i
-                                        className={`bi bi-chevron-double-right transform transition-transform duration-300 ${index === i ? 'rotate-90' : ''}`}
-                                    ></i>
-                                </button>
-                                <div
-                                    className={`transition-all duration-300 overflow-hidden ${index === i ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}
-                                >
-                                    <p className="text-sm text-black/70 pb-4">{item.text}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <Accordion/>
                 </div>
             </div>
         </section>
