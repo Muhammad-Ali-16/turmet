@@ -71,14 +71,14 @@ function Tour() {
                                     {/* >------->-------->Tour-Card-Info<-------<--------< */}
                                     <div className="card-info mx-2 space-y-4.5 my-4">
                                         <h3 className="text-lg font-semibold hover:text-[var(--text-secondary)] transition-colors cursor-pointer line-clamp-2">
-                                            <a href="/tour_details">
+                                            <a href="/tour-details">
                                                 {card.heading}
                                             </a>
                                         </h3>
                                         <div className="card-pricing flex flex-row justify-between items-center mx-1">
                                             <div className="price"><h5 className='font-bold'>${card.pricing} <sub className='font-normal text-[var(--text-primary)]'> / Per Day</sub></h5></div>
                                             <button className="card-btn border border-black/20 py-1 px-2 rounded-sm transition-colors cursor-pointer hover:border-[var(--bg-secondary)] hover:bg-[var(--bg-secondary)] hover:text-white">
-                                                <a href="/tour_details">
+                                                <a href="/tour-details">
                                                     <i className="bi bi-arrow-right"></i>
                                                 </a>
                                             </button>

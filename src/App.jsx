@@ -13,6 +13,7 @@ import FAQ from "./page/FAQ";
 import Contact from "./page/Contact";
 import ActivitiesDetails from "./page/ActivitiesDetails";
 import TourDetails from "./page/TourDetails";
+import TeamDetails from "./page/TeamDetails";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route element={<Layout />}>
           <Route path="/team" element={<><PagesLayout title='Our Team' /> <PageTeam /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/team/team-details" element={<><PagesLayout title='Team Details' /> <TeamDetails /></>} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/blog" element={<><PagesLayout title='Our Blog' /> <PageBlog /></>} />

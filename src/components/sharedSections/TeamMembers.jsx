@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function TeamMembers({ CardsData }) {
     const TeamCards = CardsData;
@@ -15,7 +16,7 @@ function TeamMembers({ CardsData }) {
                         />
 
                         <div className="card-info relative bottom-10 left-0 right-0 bg-white shadow-md mx-4 rounded-xl px-4 py-6">
-                            <h3 className='font-bold text-xl'><a href="/team_details" className=' hover:text-[var(--text-secondary)]'>{card.name}</a></h3>
+                            <h3 className='font-bold text-xl'><Link to="/team/team-details" className=' hover:text-[var(--text-secondary)]'>{card.name}</Link></h3>
                             <p className='text-black/60'>{card.profession}</p>
 
                             <div className="group">

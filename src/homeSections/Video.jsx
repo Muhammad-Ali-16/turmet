@@ -18,7 +18,7 @@ function Video() {
                     </div>
                     <div className="video-btns flex flex-col sm:flex-row sm:space-x-5 sm:space-y-0 space-y-6">
                         <Button path='/contact' text='Contact Us' additionalClass='bg-[var(--button-primary)] before:bg-[var(--button-secondary)] text-[var(--text-light)]' />
-                        <Button path='/tour_details' text='Book Now' additionalClass='bg-[var(--button-secondary)] before:bg-[var(--button-primary)] text-[var(--text-light)]' />
+                        <Button path='/tour-details' text='Book Now' additionalClass='bg-[var(--button-secondary)] before:bg-[var(--button-primary)] text-[var(--text-light)]' />
                     </div>
                 </div>
 
