@@ -1,17 +1,17 @@
+import { Link } from 'react-router-dom'
 import BlogImg1 from '../assets/blog-1.jpg'
 import BlogImg2 from '../assets/blog-2.jpg'
 import BlogImg3 from '../assets/blog-3.jpg'
 import BlogImg4 from '../assets/blog-4.jpg'
 import GroupImg from '../assets/group-about.png'
 
-
 function Blog() {
 
     const BlogCards = [
-        { ImgUrl: BlogImg1, noComments: '02', Date: 'Jun 28, 2024', Heading: 'Ultimate Guide To Planning Your Dream Vacation', Path: '/blog_details' },
-        { ImgUrl: BlogImg2, noComments: '02', Date: 'May 15, 2022', Heading: 'Unforgettable Adventures Travel Agency Bucket List Experiences', Path: '/blog_details' },
-        { ImgUrl: BlogImg3, noComments: '02', Date: 'Oct 12, 2020', Heading: 'Exploring Culture and way Cuisine Travel Agency', Path: '/blog_details' },
-        { ImgUrl: BlogImg4, noComments: '02', Date: 'Feb 01, 2019', Heading: 'Travel Agency is they Best Foodie Destinations', Path: '/blog_details' },
+        { ImgUrl: BlogImg1, noComments: '02', Date: 'Jun 28, 2024', Heading: 'Ultimate Guide To Planning Your Dream Vacation' },
+        { ImgUrl: BlogImg2, noComments: '02', Date: 'May 15, 2022', Heading: 'Unforgettable Adventures Travel Agency Bucket List Experiences' },
+        { ImgUrl: BlogImg3, noComments: '02', Date: 'Oct 12, 2020', Heading: 'Exploring Culture and way Cuisine Travel Agency' },
+        { ImgUrl: BlogImg4, noComments: '02', Date: 'Feb 01, 2019', Heading: 'Travel Agency is they Best Foodie Destinations' },
     ]
 
     return (
@@ -49,9 +49,9 @@ function Blog() {
                             </div>
                             <div className="card-btn flex flex-row justify-between items-center pb-4">
                                 <button className='text-md font-bold text-black/70'>
-                                    <a href={card.Path}>
+                                    <Link to='/blog/blog-details'>
                                         Read More <i className="bi bi-arrow-right"></i>
-                                    </a>
+                                    </Link>
                                 </button>
                                 <img src={GroupImg} alt="group-img" className='max-w-[100px]' />
                             </div>

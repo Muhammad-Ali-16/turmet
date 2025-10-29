@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BlogImg1 from '../assets/page-blog-1.jpg'
 import BlogImg2 from '../assets/page-blog-2.jpg'
 import BlogImg3 from '../assets/page-blog-3.jpg'
@@ -36,8 +37,8 @@ function PageBlog() {
                                         <h5 className='text-black/65'><i className="text-[var(--text-secondary)] bi bi-person"></i> By Admin</h5>
                                         <h5 className='text-black/65'><i className="text-[var(--text-secondary)] bi bi-tag-fill"></i> Travel</h5>
                                     </div>
-                                    <h3 className='blog-heading font-bold text-xl'><a href="/blog_details" className=' hover:text-[var(--text-secondary)]'>{card.heading}</a></h3>
-                                    <button className='blog-btn text-sm font-bold text-black/80'><a href="/blog_details">Read More <i className="ms-2 bi bi-arrow-right"></i></a></button>
+                                    <h3 className='blog-heading font-bold text-xl'><Link to="/blog/blog-details" className=' hover:text-[var(--text-secondary)]'>{card.heading}</Link></h3>
+                                    <button className='blog-btn text-sm font-bold text-black/80'><Link to="/blog/blog-details">Read More <i className="ms-2 bi bi-arrow-right"></i></Link></button>
                                 </div>
 
                             </div>

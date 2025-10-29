@@ -14,6 +14,7 @@ import Contact from "./page/Contact";
 import ActivitiesDetails from "./page/ActivitiesDetails";
 import TourDetails from "./page/TourDetails";
 import TeamDetails from "./page/TeamDetails";
+import BlogDetails from "./page/BlogDetails";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route element={<Layout />}>
           <Route path="/blog" element={<><PagesLayout title='Our Blog' /> <PageBlog /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/blog/blog-details" element={<><PagesLayout title='Blog Details' /> <BlogDetails /></>} />
         </Route>
         <Route element={<Layout />}>
           <Route path="/faq" element={<><PagesLayout title='FAQ' /> <FAQ /></>} />
