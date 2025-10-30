@@ -15,6 +15,7 @@ import ActivitiesDetails from "./page/ActivitiesDetails";
 import TourDetails from "./page/TourDetails";
 import TeamDetails from "./page/TeamDetails";
 import BlogDetails from "./page/BlogDetails";
+import PageServices from "./page/PageServices";
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
         </Route>
         <Route element={<Layout />}>
           <Route path="/tour-details" element={<><PagesLayout title='Tour Details' /> <TourDetails /></>} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/services" element={<><PagesLayout title='Our Services' /> <PageServices /></>} />
         </Route>
 
 
