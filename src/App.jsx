@@ -23,47 +23,47 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/about" element={<><PagesLayout title='About Us' /> <PageAbout /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/activities" element={<><PagesLayout title='Activities' /> <Activities /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/activities/activities-details" element={<><PagesLayout title='Activities Details' /> <ActivitiesDetails /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/team" element={<><PagesLayout title='Our Team' /> <PageTeam /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/team/team-details" element={<><PagesLayout title='Team Details' /> <TeamDetails /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/blog" element={<><PagesLayout title='Our Blog' /> <PageBlog /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/blog/blog-details" element={<><PagesLayout title='Blog Details' /> <BlogDetails /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/faq" element={<><PagesLayout title='FAQ' /> <FAQ /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/contact" element={<><PagesLayout title='Contact Us' /> <Contact /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/destination" element={<><PagesLayout title='Destination' /> <PageDestination /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/tour" element={<><PagesLayout title='Tour' /> <PageTour /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/tour-details" element={<><PagesLayout title='Tour Details' /> <TourDetails /></>} />
-        </Route>
-        <Route element={<Layout />}>
-          <Route path="/services" element={<><PagesLayout title='Our Services' /> <PageServices /></>} />
-        </Route>
 
+
+          <Route path="/about" element={<><PagesLayout title='About Us' /> <PageAbout /></>} />
+
+
+          <Route path="/activities" element={<><PagesLayout title='Activities' /> <Activities /></>} />
+
+
+          <Route path="/activities/activities-details" element={<><PagesLayout title='Activities Details' /> <ActivitiesDetails /></>} />
+
+
+          <Route path="/team" element={<><PagesLayout title='Our Team' /> <PageTeam /></>} />
+
+
+          <Route path="/team/team-details" element={<><PagesLayout title='Team Details' /> <TeamDetails /></>} />
+
+
+          <Route path="/blog" element={<><PagesLayout title='Our Blog' /> <PageBlog /></>} />
+
+
+          <Route path="/blog/blog-details" element={<><PagesLayout title='Blog Details' /> <BlogDetails /></>} />
+
+
+          <Route path="/faq" element={<><PagesLayout title='FAQ' /> <FAQ /></>} />
+
+
+          <Route path="/contact" element={<><PagesLayout title='Contact Us' /> <Contact /></>} />
+
+
+          <Route path="/destination" element={<><PagesLayout title='Destination' /> <PageDestination /></>} />
+
+
+          <Route path="/tour" element={<><PagesLayout title='Tour' /> <PageTour /></>} />
+
+
+          <Route path="/tour-details" element={<><PagesLayout title='Tour Details' /> <TourDetails /></>} />
+
+
+          <Route path="/services" element={<><PagesLayout title='Our Services' /> <PageServices /></>} />
+
+        </Route>
 
       </Routes>
     </BrowserRouter>
